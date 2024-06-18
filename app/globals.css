@@ -1,0 +1,291 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 0 0 30px rgba(0, 0, 0, 0.2): 0 0 30px rgba(0, 0, 0, 0.2);
+rgba(0, 0, 0, 0.2): rgba(0, 0, 0, 0.2);
+$polygon: polygon(0 0, 100% 0, 100% 100%, 0 90%); */
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* .hover-shadow-inner {
+  transition: box-shadow 0.3s ease-in-out;
+} */
+.hover-shadow-inner:hover {
+  box-shadow: inset 178px 0px 120px rgba(37, 174, 34, 1) !important;
+}
+.child {
+  display: block;
+  -webkit-animation: fadeIn 1.5s;
+  animation: fadeIn 1.5s;
+}
+/*  */
+.roundshadow {
+  box-shadow: 0px 0px 30px 0px #25ae22;
+}
+.tooltip-content {
+  width: 315px;
+  background: white;
+  padding: 20px 25px;
+  border-radius: 8px;
+  position: absolute;
+  right: -134px;
+  /* transform: translateX(-50%); */
+  bottom: -177px;
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  transition: 0.3s linear;
+}
+.aboutbannerimage {
+  background-image: url("/aboutmain.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bannerimage {
+  background-image: url("/Section.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slidergrayimage {
+  background-image: url("/grayBG.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+.grayimage {
+  background-image: url("/grayBG.svg");
+  object-fit: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+.contactimage {
+  background-image: url("/contactbg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+.resourceimage {
+  background-image: url("/Newbedroom.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+.sellimage {
+  background-image: url("/buykitchen.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.sellerbg {
+  background-image: url("/off.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.reviewimage {
+  background-image: url("/review.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.buyresourceimage {
+  background-image: url("/buykitchen.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+/* Added opacity to the background overlay */
+.resourceimage .bg-black {
+  opacity: 0.3;
+}
+.recentimage {
+  background-image: url("/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+.cardimage:hover {
+  background-image: url("/Section.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all;
+  transition-duration: 2s;
+}
+
+.heromainbgimage {
+  background-image: url("/about_img02.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left;
+}
+.liveprobgimage {
+  background-image: url("/liveprogradient.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footerbgimage {
+  background-image: url("/footerbgimage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.contactinput::placeholder {
+  color: #999; /* Placeholder text color */
+}
+.rotate-cross {
+  transform: rotate(-225deg);
+}
+.active {
+  background-color: #15151f29;
+  border-radius: 100%;
+  width: 25px;
+  height: 25px;
+  color: white;
+}
+.hover-shadow-inner {
+  transition: box-shadow 0.3s ease-in-out;
+}
+.buisness-detail-card.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  /* Add any additional styles for the fixed position */
+}
+.hover-shadow-inner:hover {
+  box-shadow: inset 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.pagination-button {
+  width: 25px;
+  height: 25px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pagination-button:hover {
+  background-color: #15151f29;
+  border-radius: 100%;
+  /* padding: 4px 10px; */
+
+  color: white;
+}
+.cool-link {
+  text-decoration: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.cool-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: white;
+  transition: width 0.3s;
+}
+
+.navlink::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  color: #25ae22;
+  background: #25ae22;
+  transition: width 0.3s;
+}
+
+.cool-link:hover::after {
+  width: 100%;
+  /* //transition: width .3s; */
+}
+.parllax {
+  background-image: url("/video2.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+/* CSS Styles for Typewriter Animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-right: 2px solid transparent;
+  }
+  50% {
+    border-right: 2px solid black;
+  }
+}
+
+/* Apply Typewriter Animation to Placeholder */
+#typewriter-placeholder {
+  display: inline-block;
+  overflow: hidden;
+  border-right: 2px solid black; /* Blinking cursor effect */
+  animation: typing 3s steps(20, end), blink-caret 0.75s step-end infinite;
+}
+.slider > .slick-arrow {
+  display: hidden;
+}
+
+.buyer_guide_pdf {
+  rotate: -15deg;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}

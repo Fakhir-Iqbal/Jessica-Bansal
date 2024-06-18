@@ -1,0 +1,3 @@
+First Name,Last Name,Email,Accepts Email Marketing,Default Address Company,Default Address Address1,Default Address Address2,Default Address City,Default Address Province Code,Default Address Country Code,Default Address Zip,Default Address Phone,Phone,Accepts SMS Marketing,Tags,Note,Tax Exempt
+John,Doe,john.doe@shopify.com,no,,123 Fake Street,,Ottawa,ON,CA,a1b2c3,+1 (613) 333-3333,,no,,,yes
+Jane,Doe,jane.doe@shopify.com,yes,,,,,,,,,+1 (613) 555-5555,yes,,Very nice customer,no
