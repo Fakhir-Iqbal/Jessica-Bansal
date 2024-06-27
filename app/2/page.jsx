@@ -16,17 +16,6 @@ function Id() {
     setParams(param); // Assuming setParams is a function to update state
   }, []);
 
-
-  // console.log();
-  // const router = useRouter();
-  // useEffect(() => {
-  //   const { id } = router.query;
-  //   console.log("Post ID:", id);
-  // }, [router.query]);
-
-  // const { id } = router.query;
-  // console.log(params, "router", router);
-
   // Filter the data array to find the item with matching ID
   const selectedItem = data.filter((item) => item.id == params);
   // If no matching item is found, handle this case (e.g., show a message or redirect)
